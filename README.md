@@ -1,9 +1,30 @@
 # HappyDialogAndroid
+[![Release](https://jitpack.io/v/happyfresh/HappyDialogAndroid.svg)](https://jitpack.io/#happyfresh/HappyDialogAndroid)
+
 Template for showing dialog
 
-### How to use
+## How to Get
+To get HappyDialog into your build:
 
-Definition HappyDialogButton Type first
+<b>Step 1.</b> Add the JitPack repository to your build file
+```gradle
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+<b>Step 2.</b> Add the dependency
+```gradle
+dependencies {
+        compile 'com.github.happyfresh:HappyDialogAndroid:1.0.0'
+}
+```
+
+### How to Use
+
+Define HappyDialogButton Type first
 
 ```java
 enum ButtonType implements HappyDialogButton.Type {
