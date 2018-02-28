@@ -1,5 +1,5 @@
 # HappyDialogAndroid
-[![Release](https://jitpack.io/v/happyfresh/HappyDialogAndroid.svg)](https://jitpack.io/#happyfresh/HappyDialogAndroid)
+[![Release](https://jitpack.io/v/happyfresh/HappyDialogAndroid.svg)](https://jitpack.io/#happyfresh/HappyDialogAndroid) ![Downloads](https://jitpack.io/v/happyfresh/HappyDialogAndroid/month.svg)
 
 Template for showing dialog
 
@@ -100,3 +100,5 @@ builder.show();
 * setCancelable(Boolean) / getCancelable() as Boolean
 * addCancelListener(onCancelListener)
 * addDismissListener(onDismissListener)
+* create() as Dialog
+* show() as Dialog
