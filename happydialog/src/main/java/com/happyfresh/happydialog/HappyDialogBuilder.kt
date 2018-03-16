@@ -59,12 +59,28 @@ open class HappyDialogBuilder(val context: Context) {
         addButton(type, getString(textId), listener)
     }
 
+    open fun addOnCancelListener(listener: (HappyDialogInterface) -> Unit) {
+        addOnCancelListener(object : HappyDialogInterface.OnCancelListener {
+            override fun onCancel(dialog: HappyDialogInterface) {
+                listener(dialog)
+            }
+        })
+    }
+
     open fun addOnCancelListener(listener: HappyDialogInterface.OnCancelListener) {
         if (onCancelListeners.contains(listener)) {
             return
         }
 
         onCancelListeners.add(listener)
+    }
+
+    open fun addOnDismissListener(listener: (HappyDialogInterface) -> Unit) {
+        addOnDismissListener(object : HappyDialogInterface.OnDismissListener {
+            override fun onDismiss(dialog: HappyDialogInterface) {
+                listener(dialog)
+            }
+        })
     }
 
     open fun addOnDismissListener(listener: HappyDialogInterface.OnDismissListener) {
