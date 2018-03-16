@@ -39,6 +39,7 @@ open class HappyDialog(protected val builder: HappyDialogBuilder) : Dialog(build
         setFeatureImage(builder.featureImage)
         setTitle(builder.title)
         setMessage(builder.message)
+        setCustomView(builder.customView)
         setButtons(builder.buttons)
 
         // set listener

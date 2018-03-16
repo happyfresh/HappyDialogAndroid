@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.happyfresh.happydialog.HappyDialogButton;
 import com.happyfresh.happydialog.HappyDialogBuilder;
+import com.happyfresh.happydialog.HappyDialogButton;
 import com.happyfresh.happydialog.HappyDialogInterface;
 
 import org.jetbrains.annotations.NotNull;
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setFeatureImage(R.drawable.ic_launcher_background);
                 builder.setTitle("ABC");
                 builder.setMessage("DEF");
+                builder.setCustomView(R.layout.custom_view);
                 builder.addButton(ButtonType.PRIMARY, "Test", new HappyDialogButton.OnClickListener() {
                     @Override
                     public void onClick(@NotNull View view, @NotNull HappyDialogButton button,
