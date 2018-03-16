@@ -67,6 +67,7 @@ HappyDialogBuilder builder = new HappyDialogBuilder(v.getContext());
 builder.setFeatureImage(R.drawable.ic_launcher_background);
 builder.setTitle("TITLE");
 builder.setMessage("MESSAGE");
+builder.setCustomView(R.layout.custom_view);
 builder.addButton(ButtonType.PRIMARY, "Test", new HappyDialogButton.OnClickListener() {
     @Override
     public void onClick(@NotNull View view, @NotNull HappyDialogButton button,
