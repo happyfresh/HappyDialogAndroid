@@ -1,5 +1,5 @@
 # HappyDialogAndroid
-[![Release](https://jitpack.io/v/happyfresh/HappyDialogAndroid.svg)](https://jitpack.io/#happyfresh/HappyDialogAndroid) ![Downloads](https://jitpack.io/v/happyfresh/HappyDialogAndroid/month.svg)
+[![Release](https://jitpack.io/v/happyfresh/HappyDialogAndroid.svg)](https://jitpack.io/#happyfresh/HappyDialogAndroid)
 
 Template for showing dialog
 
